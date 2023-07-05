@@ -8,6 +8,6 @@ namespace BulkyWeb.Models
         public int Id { get; set; }
         [Required]
         public string Name { get; set; }
-        public int DislayOrder { get; set; }
+        public int DisplayOrder { get; set; }
     }
 }
