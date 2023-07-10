@@ -1,8 +1,8 @@
-﻿using Bulky.DataAccess.Repository.IRepository;
-using Bulky.Models;
+﻿using BulkyBook.DataAccess.Repository.IRepository;
+using BulkyBook.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BulkyWeb.Controllers
+namespace BulkyBookWeb.Controllers
 {
     public class CategoryController : Controller
     {
@@ -102,7 +102,7 @@ namespace BulkyWeb.Controllers
             }
             _categoryRepo.Remove(category);
             _categoryRepo.Save();
-            TempData["success"] = "Category created successfully.";
+            TempData["success"] = "Category deleted successfully.";
             return RedirectToAction("Index");
         }
     }
